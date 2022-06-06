@@ -2,7 +2,7 @@ class Time_str:
 
     def zamiana_czasu(self,time):
         time_str = time.split(":")
-        if len(time) <= 7:
+        if len(time) > 1:
 
             if len(time_str[0]) == 1:
                 time_str[0] = "0"+time_str[0]
@@ -18,6 +18,6 @@ class Time_str:
                 time_str[1] = "59"
         final_string=":".join(time_str)
         print(final_string)
-Time_str().zamiana_czasu("0:0")
+
 
 
